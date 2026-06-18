@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { ShieldCheck, MessageCircle, Award, ExternalLink, Briefcase } from 'lucide-react';
 
 export default function LandingPage() {
-  // Data Link Aplikasi
+  // Data Link Aplikasi Terintegrasi
   const links = [
     {
       title: "Dewaweb Hosting",
@@ -90,7 +90,6 @@ export default function LandingPage() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              {/* Kartu menggunakan warna dasar yang sedikit lebih terang dari background, dengan border kontras tipis */}
               className="group flex flex-col justify-between h-48 w-full bg-[#1f1b14] border border-[#2d271d] hover:border-[#CBB682]/40 rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-[#785F37]/10 relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-b from-[#CBB682]/0 to-[#CBB682]/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

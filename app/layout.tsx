@@ -12,6 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Metadata SEO Premium untuk Proyek Karmalanz
 export const metadata: Metadata = {
   title: "Karmalanz | Premium Web & Digital Solutions",
   description: "Layanan pengembangan website profesional berbasis Next.js & solusi digital cerdas oleh Karmalanz. Temukan rekomendasi infrastruktur terbaik untuk bisnis Anda.",
@@ -19,15 +20,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
